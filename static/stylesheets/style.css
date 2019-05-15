@@ -1,0 +1,250 @@
+.bg-inverse {
+    background-color: #353849f2!important;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+li a:active {
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.intro {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.row {
+    width:  100%;
+}
+.nounderline {
+    text-decoration: none;
+}
+
+.nounderline:hover {
+    text-decoration: none;
+}
+
+.nounderline:active {
+    text-decoration: none;
+}
+
+.nounderline:visited {
+    text-decoration: none;
+}
+
+.nounderline:focus {
+    text-decoration: none;
+}
+
+.score-size {
+    font-size: 20px;
+}
+
+.padding-column {
+    font-size: 15px;
+}
+
+.front-padding-left {
+    padding-left: 50px;
+}
+
+.reddit-boxes {
+    font-size: 18px;
+    color: #2B2B2B;
+}
+
+body {
+    padding-bottom: 70px;
+}
+
+#dateform {
+    margin-bottom: 25px;
+}
+
+.date-title {
+    margin-bottom: 20px;
+}
+
+.team-logo {
+    height: 23px;
+    margin-bottom: 3px;
+}
+
+.team-logo-sm {
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.team-logo-sm-quarter {
+    height: 25px;
+    margin-bottom: 3px;
+}
+
+.team-logo-sm-boxscore {
+    height: 40px;
+    margin-bottom: 7px;
+}
+
+.team-logo-lg {
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.player-headshot {
+    margin-bottom: 15px;
+}
+
+.banner-logo {
+    height: 25px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.danger-red {
+    color: #d9534f;
+}
+
+.danger-red:hover {
+    color: #c9302c;
+}
+
+.grey {
+    color: #595959;
+}
+
+.grey:hover {
+    color: #424242;
+}
+
+.dark-grey {
+    color: #2B2B2B;
+}
+
+.dark-grey:hover {
+    color: #424242;
+}
+
+.boxscore-column-width {
+    min-width: 51px;
+}
+
+.broadcast-column {
+    margin-top: 7px;
+}
+
+.final-text {
+    font-size: 19px;
+    color: #383838;
+    font-weight: 700;
+}
+
+.winning-team {
+    color: #383838;
+}
+
+.broadcaster {
+    font-size: 15px;
+    color: #707070;
+}
+
+.season-highs {
+    height: 100px;
+}
+
+.season-highs-text {
+    margin-top: 20px;
+    margin-right: -20px;
+}
+
+.legend-from-table {
+    margin-top: 10px;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  color: black;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: black;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #d4d4d4; 
+  color: black;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+  color: black;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+}
+
+@media only screen and (min-width: 1279px) {
+	.table-responsive {
+		overflow-x: hidden;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+    .boxscore-column-width {
+        min-width: 49px;
+    }
+}

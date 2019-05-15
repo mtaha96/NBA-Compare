@@ -1,0 +1,9 @@
+Flask
+requests
+nba_py
+pytz
+praw
+beautifulsoup4
+google-api-python-client
+python-dateutil
+Werkzeug
