@@ -4143,6 +4143,7 @@ input[type=submit] {
   left: 0;
   right: 0;
   color: #ffffff; 
+  text-align: left;
 }
 
 .autocomplete-items div {

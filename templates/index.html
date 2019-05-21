@@ -194,9 +194,9 @@ function autocomplete(inp, arr) {
 }
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("player"), {{ all_active_players|tojson }});s
 autocomplete(document.getElementById("player1"), {{ all_active_players|tojson }});
 autocomplete(document.getElementById("player2"), {{ all_active_players|tojson }} );
-
 </script>
 
 	</body>

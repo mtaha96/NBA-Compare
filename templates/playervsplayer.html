@@ -327,8 +327,11 @@
         <br>
         <h2>Career Regular Season Progress Plots:</h2>
         <div>
-        {% for i in all_plots %}
-                <img src="data:image/png;base64,{{ i }}"/>
+        {% for name, plot in all_plots.items() %}
+                <div class='plotcontain'>
+                <h4> {{ name }} </h4>
+                <img src="data:image/png;base64,{{ plot }}"/>
+                </div>
         {% endfor %}
         </div>
     </div>

@@ -35,6 +35,19 @@
             </div>
         </div>
         <br>
+        <hr />
+            <h4>Add player to compare: </h4>
+            <form autocomplete="off" action="/search2" method="POST">
+                  <div class="autocomplete">
+                    <input id="addplayer" type="text" name="searchname" placeholder="First Player...">
+                  </div>     
+                    <input type="hidden" name="searchname2" value="{{ player_summary_info["DISPLAY_FIRST_LAST"] }}">                  
+                  <input type="submit" value="Submit">
+          </form>
+        <br>
+        <hr />
+        <br>
+        
         <h4>{{ season }}</h4>
         <table class="table table-sm">
             <thead>
@@ -251,9 +264,6 @@
             {% endfor %}
             </tbody>
         </table>
-        <div>
-        <img src="/plot/{{ headline_stats["PLAYER_ID"] }}.png" alt="my plot">
-        </div>
         {% endif %}
         {% if player_career_post_season_totals %}
         <br>
@@ -319,5 +329,16 @@
             </tbody>
         </table>
         {% endif %}
+        <hr />
+        <br>
+        <h2>Career Regular Season Progress Plots:</h2>
+        <div>
+        {% for name, plot in all_plots.items() %}
+                <div class='plotcontain'>
+                <h4> {{ name }} </h4>
+                <img src="data:image/png;base64,{{ plot }}"/>
+                </div>
+        {% endfor %}
+        </div>
     </div>
 {% endblock %}

@@ -1,12 +1,19 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: python37
+entrypoint: gunicorn -b :$PORT main:app --timeout=300
+env: standard
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
 handlers:
 - url: /static
   static_dir: static
+
+- url: /templates
+  static_dir: templates
+
 - url: /.*
-  script: main.app
+  script: auto
   
-libraries:
-  - name: ssl
-    version: latest
