@@ -12,10 +12,10 @@ In this section, I will be conducting a quick demo for the website.
 ### Home Page
 
 The homepage currently have three different sections: introduction, single player search and two player searchs. 
-image 
+![demo1](static/images/demo01.JPG)
 
 For all the player searchboxes, I added an autocomplete function with all the nba players. 
-image
+![demo2](static/images/demo02.JPG)
 
 
 
@@ -23,19 +23,21 @@ image
 
 If the user searches for one player then all his common information like height, weight, hometown etc.. will be shown first. 
 Then the next section will contain the option to add a second player in order to compare all the stats. The section after that contains his overall stats for each season that he played in during his career. 
-image 
+![demo3](static/images/demo03.JPG)
 
 After that, the next section will contain all the plots for the player stats progress throughout the years. 
-image
+![demo4](static/images/demo04.JPG)
+
 
 ### Two Player Search
 
 If the user searches for one player then all his common information like height, weight, hometown etc.. will be shown first. 
 Then the next section will contain the option to add a second player in order to compare all the stats. The section after that contains his overall stats for each season that he played in during his career. 
-image 
+![demo5](static/images/demo05.JPG)
 
 After that, the next section will contain all the plots for the player stats progress throughout the years. 
-image
+![demo6](static/images/demo06.JPG)
+
 
 
 ## Setup
@@ -45,12 +47,13 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 What things you need to install the software and how to install them throught requirements.txt. 
-
-The command: pip install -r requirements.txt 
+0. Have `pip` installed. `sudo apt-get install pip`
+1. `pip install -r requirements.txt`
 
 ### Run
 
-After that, you could run the python command: python main.py
+After that, you could run the python command: 
+1. `python main.py`
 
 Then the website will be running on localhost port 8080. http://localhost:8080/
 
