@@ -38,7 +38,7 @@ from base64 import b64encode
 import json
 import time
 app = Flask(__name__)
-proxy='24.227.248.226:55997'
+#proxy='178.128.234.37:3128'
 
 
 """
@@ -175,8 +175,8 @@ def get_player_information(playerid):
     playerinfo = {}
         
     # Retrieve player 1 information and stats
-    player_summary = commonplayerinfo.CommonPlayerInfo(player_id=playerid, proxy=proxy, timeout=500)
-    #player_summary = commonplayerinfo.CommonPlayerInfo(player_id=playerid, timeout=500)
+    ##player_summary = commonplayerinfo.CommonPlayerInfo(player_id=playerid, proxy=proxy, timeout=100)
+    player_summary = commonplayerinfo.CommonPlayerInfo(player_id=playerid, timeout=500)
     player_summary_info = player_summary.get_data_frames()[0]
     headline_stats = player_summary.get_data_frames()[1]
     playerinfo['headline_stats'] = headline_stats
@@ -195,7 +195,8 @@ def get_player_information(playerid):
     playerinfo['age'] = calculate_age(birth_date)
 
 
-    career = playercareerstats.PlayerCareerStats(player_id=playerid, proxy=proxy, timeout=500)
+    #career = playercareerstats.PlayerCareerStats(player_id=playerid, proxy=proxy, timeout=100)
+    career = playercareerstats.PlayerCareerStats(player_id=playerid, timeout=100)
     player_career_regular_season_totals =career.get_data_frames()[1].to_dict('records') 
     player_career_post_season_totals = career.get_data_frames()[3].to_dict('records') 
     player_career_regular_season = career.get_data_frames()[0].to_dict('records') 
