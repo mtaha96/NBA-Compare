@@ -40,20 +40,6 @@ import time
 app = Flask(__name__)
 #proxy='178.128.234.37:3128'
 
-
-"""
-# A function that forces recaching every 10 minutes.
-@app.after_request
-def add_header(response):
-    # Add headers to both force latest IE rendering engine or Chrome Frame,
-    # and also to cache the rendered page for 10 minutes.
-    
-    
-    response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
-    response.headers['Cache-Control'] = 'public, max-age=0'
-    return response
-"""
-
 @app.route('/')
 def index():
     """Main page of the website that by default renders the score page.
@@ -342,8 +328,6 @@ def get_active_players():
     players_list = []
     for player in allplayers:
         players_list.append(player['full_name'])
-        
-    #players_list = json.dumps(players_list)
     return players_list
 
 @app.route('/search', methods=["POST"])
