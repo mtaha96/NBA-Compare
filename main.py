@@ -38,7 +38,7 @@ from base64 import b64encode
 import json
 import time
 app = Flask(__name__)
-proxy='51.254.205.160:8888'
+proxy='24.227.248.226:55997'
 
 
 """
