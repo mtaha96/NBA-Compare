@@ -31,11 +31,11 @@ After that, the next section will contain all the plots for the player stats pro
 
 ### Two Player Search
 
-If the user searches for one player then all his common information like height, weight, hometown etc.. will be shown first. 
-Then the next section will contain the option to add a second player in order to compare all the stats. The section after that contains his overall stats for each season that he played in during his career. 
+If the user searches for two players then all their common information like height, weight, hometown etc.. will be shown first. 
+ The section after that will compare their overall career averages and highlight the one that is higher. er. 
 ![demo5](static/images/demo05.JPG)
 
-After that, the next section will contain all the plots for the player stats progress throughout the years. 
+After that, the next section will contain all the plots for the two players throughout their career seasons. 
 ![demo6](static/images/demo06.JPG)
 
 
